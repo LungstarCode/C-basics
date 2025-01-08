@@ -22,3 +22,19 @@ if (total > 15){
 if (total < 150){
     Console.WriteLine("Sorry but you Lose!");
 }
+
+Console.Clear();
+
+// The arrays section 
+
+int[] numberArray = new int[5];   // create a integer array that has predefined memory or 5 integer elements.
+ 
+// initialize the array using its indexes.
+numberArray[0] = 1;
+numberArray[1] = 2;
+numberArray[2] = 3;
+numberArray[3] = 4;
+numberArray[4] = 5;
+
+// access and print the elemnet at index zero of the array.
+Console.WriteLine($"The element at index 0 is {numberArray[0]}"); 
