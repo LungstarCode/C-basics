@@ -38,3 +38,9 @@ numberArray[4] = 5;
 
 // access and print the elemnet at index zero of the array.
 Console.WriteLine($"The element at index 0 is {numberArray[0]}"); 
+
+string[] names = {"Lungile", "Adam", "Mpumie"}; // create and initialize the array with some values 
+
+Console.WriteLine($"There are {names.Length} people in the list.");
+Console.WriteLine($"The name of the programmer is {names[0]}");
+
