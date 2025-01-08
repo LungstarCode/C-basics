@@ -117,3 +117,28 @@ foreach (var orderID in orderIDs)
 {
     Console.WriteLine(orderID);
 }
+
+Console.Clear();
+
+/* The following code counts how many times the character 'o' appears on a text*/
+
+// variable that stores the text to search through
+string someText = "I am out hear, somewhere in the corner of South Africa trying to make the best programmer in C#";
+
+// convert someText's elements to a char array to make it easy to count the 'o's
+char[] characters = someText.ToCharArray();
+
+// reverse the elements of the array - not necessary 
+Array.Reverse(characters); 
+
+// count is the variable that will hold the number of 'o's of the iteration
+int count =0; 
+
+foreach (char character in characters){
+
+    if (character == 'o'){
+        count++;
+    }
+}
+
+Console.WriteLine($"There are {count} o's in \"{someText}\"");
