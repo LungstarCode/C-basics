@@ -65,3 +65,33 @@ qualification[2] = "Front-End Developer";
 for (int i = 0 ; i < qualification.Length ; i++){
     Console.WriteLine($"{names[i]} is a certified {qualification[i]}");
 }
+
+
+// Could that be easier using a foreach loop? 
+char[] grades = {'A' , 'B', 'C'};
+
+foreach (char grade in grades) {
+    Console.WriteLine($"You could possible become an {grade} grade C# programmer.");
+}
+
+
+Console.Clear();
+// Code challenge - Report the Order IDs that need further investigation
+
+
+
+// STEP 1: Declare an array and initialize it to contain the following elements
+// B123 C234 A345 C156 B177 G3003 C235 B179
+
+string[] fradulentOrderId = {"B123", "C234" , "A345", "C156" , "B177"  , "G3003", "C235", "B179"};
+
+
+// STEP 2: Create a foreach statement to iterate through each element of your array.
+
+foreach(string id in fradulentOrderId){
+    if (id.StartsWith("B")) {
+        Console.WriteLine(id); // onlu prints if the ID starts with B
+    }
+}
+
+// STEP #: Report the Order IDs that start with the letter "B". -- this is done on the foreach loop
