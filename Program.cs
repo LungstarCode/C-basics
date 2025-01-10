@@ -526,3 +526,31 @@ Random rand = new();
 int flip = rand.Next(0,2);
 
 Console.WriteLine((flip ==1)? "head": "tail");
+
+Console.Clear();
+
+//
+
+string permusion = "Admin|manager";
+int level = 55;
+
+if (permusion.Contains("Admin") && level > 55){
+    Console.WriteLine("Welcome, Super Admin user.");
+}
+
+else if (permusion.Contains("Admin") && level <= 55){
+    Console.WriteLine("Welcome, Admin user.");
+}
+
+else if (permusion.Contains("Manager") && level >= 20){
+    Console.WriteLine("Contact an Admin for access.");
+}
+
+else if (permusion.Contains("Manager") && level < 20){
+    Console.WriteLine("You do not have sufficient privileges.");
+}
+
+else {
+    Console.WriteLine("You do not have sufficient privileges.");
+}
+
