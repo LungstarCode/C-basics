@@ -492,12 +492,12 @@ foreach (string name in studentNames)
     // Student         Grade
     // Sophia:         92.2    A-
     
-    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
+ //   Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
 }
 
 // required for running in VS Code (keeps the Output windows open to view results)
-Console.WriteLine("\n\rPress the Enter key to continue");
-Console.ReadLine();
+// Console.WriteLine("\n\rPress the Enter key to continue");
+// Console.ReadLine();
 
 Console.Clear();
 
@@ -519,3 +519,10 @@ Console.WriteLine(a != A); // this should be true
 string whatIsIt = (a == "a"? "Oh yes": "Ohh no"); // test the condition, if true, return ohh yes, else, ohh no
 Console.WriteLine(whatIsIt);
 
+Console.Clear();
+// Flip a coid challege, return eaither heads or tail 
+
+Random rand = new();
+int flip = rand.Next(0,2);
+
+Console.WriteLine((flip ==1)? "head": "tail");
